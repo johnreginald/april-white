@@ -882,3 +882,8 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*Start of custom style*/
+.main-navigation li {
+    margin-right: 20px;
+}
