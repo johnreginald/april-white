@@ -8,8 +8,7 @@
  */
 ?>
 
-                </div><!-- .panel-body -->
-            </div><!-- .panel -->
+            </div><!-- .row -->
         </div><!-- .container -->
 	</div><!-- #content -->
 
@@ -25,6 +24,12 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<script>
+    jQuery(document).ready(function($){
+        $('.navbar ul').addClass('nav navbar-nav navbar-right');
+    });
+</script>
 
 </body>
 </html>
