@@ -46,6 +46,61 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+/*css reset*/
+
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css reset end---------------------------------------*/
+
+
+
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -53,7 +108,8 @@ html {
 }
 
 body {
-	margin: 0;
+	 margin: 0;
+	 background: #fffeee!important;
 }
 
 article,
@@ -495,10 +551,10 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	color: royalblue;
-}
+ }
 
 a:visited {
-	color: purple;
+	color: #000;
 }
 
 a:hover,
@@ -515,6 +571,7 @@ a:hover,
 a:active {
 	outline: 0;
 }
+
 
 /*--------------------------------------------------------------
 ## Menus
@@ -886,4 +943,80 @@ object {
 /*Start of custom style*/
 .main-navigation li {
     margin-right: 20px;
+}
+
+/*----------by Myint (10.4.2015,Friday)---------*/
+
+h1 a{
+	font-size: 32px;
+}
+
+h1 a:hover{
+	text-decoration: none;	 
+ }
+
+ img#header{
+ 	width: 100%;
+ 	height: auto;
+ 	margin-bottom: 10px;
+ 	border-radius: 20px;
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ }
+ 
+nav.navbar{
+    margin-bottom: 5px;
+}
+
+#colophon{
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+ 
+ #search{
+ 	margin-top: 25px;
+  }
+
+.top{
+	padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #333;
+  background-color: #fffccc!important;
+}
+
+.navbar-default {
+	background: #fff!important;
+}
+
+/*myint*/
+
+.widget_search {
+  display: none;
+}
+
+footer#colophon{
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.widget-area h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  background: gainsboro;
+  padding: 5px;
+}
+
+ul li{
+	list-style-type: square;
+	margin-left: -11px;
+}
+
+#secondary{
+	background: #f1f1f1;
+	padding-bottom: 5px;
 }

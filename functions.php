@@ -104,6 +104,9 @@ function april_white_scripts() {
 
 	wp_enqueue_style( 'bootstrap-min', get_template_directory_uri() . '/css/bootstrap.min.css' );
 
+	wp_enqueue_script('jquery',get_template_directory_uri() . '/js/jquery-1.8.3.min.js');
+	wp_enqueue_script('bootstrap-min-js',get_template_directory_uri() . '/js/bootstrap.min.js');
+
 	wp_enqueue_script( 'april-white-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'april-white-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

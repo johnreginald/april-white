@@ -25,18 +25,49 @@
 		<div class="container">
 			<div class="panel panel-default">
 				<div class="panel-body">
-
 					<div class="site-branding">
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-					</div><!-- .site-branding -->
+						<div class="row top">
+							<div class="col-lg-9">
+					  			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					  		</div>			
+					  		<div class="col-lg-3" id="search">
+								<?php get_search_form(); ?>								
+							</div>			
 
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'april-white' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
-					
-				</div><!-- .panel-body -->
+							<div class="row">
+								<div class="container">
+									<img src="<?php echo get_template_directory_uri(); ?>/layouts/headertest.jpg" alt="Logo" width="HERE" height="HERE" id="header"/>
+								</div>								
+							</div>  		
+						</div>
+										
+					</div><!-- .site-branding -->			     
+
+					<!-- myint's nav start-->
+					<nav class="navbar navbar-default" role="navigation">
+					    <!-- Mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" 
+					      data-toggle="collapse" data-target=".navbar-ex1-collapse"
+					      aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					     </button>
+					    </div>
+					  
+					    <!-- Collect the nav links for toggling -->
+					  <?php // Loading WordPress Custom Menu
+					       wp_nav_menu( array(
+					        'menu_class' => 'nav navbar-nav',
+					        'container_class' => 'collapse navbar-collapse navbar-ex1-collapse'
+					     ));
+					  ?>		  
+					</nav>
+					<!-- myint's nav end -->
+
+  			   </div><!-- .panel-body -->
 			</div><!-- .panel -->
 		</div><!-- .container -->
 	</header><!-- #masthead -->

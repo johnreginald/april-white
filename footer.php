@@ -13,7 +13,7 @@
         </div><!-- .container -->
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="container site-footer" role="contentinfo">
         <div class="container">
     		<div class="site-info">
     			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'april-white' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'april-white' ), 'WordPress' ); ?></a>
