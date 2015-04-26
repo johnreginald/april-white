@@ -30,7 +30,7 @@
 		<?php _e( 'Skip to content', 'april-white' ); ?>
 	</a>
 
-	<nav class="navbar navbar-default main-menu" role="navigation">
+	<nav class="navbar navbar-default navbar-static-top main-menu" role="navigation">
 	    <div class="container">
 	        <!-- Brand and toggle get grouped for better mobile display -->
 	        <div class="navbar-header">
